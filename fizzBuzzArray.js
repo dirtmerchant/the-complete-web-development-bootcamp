@@ -16,7 +16,7 @@ while(count <= 100) {
   } else {
     output.push(count);
   }
-  count++;
+  //count++;
 }
   console.log(output);
 }
