@@ -78,3 +78,39 @@ function HouseKeeper (name, yearsOfExperience, cleaningRepertoire) {
 }
 
 var houseKeeper1 = new HouseKeeper ("Rosy", 20, ["bathroom", "lobby", "bedroom"])
+
+
+function BellBoy (name, age, hasWorkPermit, languages) {
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.languages = languages;
+    this.moveSuitcase = function () {
+        alert("may I take your suitcase?");
+        pickUpSuitcase();
+        move();
+    }
+}
+
+
+function HouseKeeper (name, yearsOfExperience, cleaningRepertoire) {
+    this.name = name;
+    this.yearsOfExperience = yearsOfExperience;
+    this.cleaningRepertoire = cleaningRepertoire; 
+    this.clean = function () {
+        alert("Cleaning in progress...");
+    }
+}
+
+
+## Callback Function
+
+document.addEventListener("keypress", respondToKey(event));
+
+function respondToKey(event){
+    console.log("Key Pressed.");
+}
+
+$0.addEventListener("click", function(event) {
+    console.log(event);
+});
