@@ -119,3 +119,41 @@ $0.addEventListener("click", function(event) {
 ## Higher Order Function
 
 
+##
+
+JQuery
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js" async defer></script>
+
+$(document).ready(function () {
+  console.log($("h1").css("font-size"));
+});
+
+## set value 
+$(document).ready(function () {
+  $("h1").css("color", "green");
+});
+
+## get value
+
+$(document).ready(function () {
+  console.log($("h1").css("font-size"));
+});
+
+## Separation of concerns
+
+$(document).ready(function () {
+  $("h1").addClass("big-title");
+});
+
+## Multiple classes
+
+$(document).ready(function () {
+  $("h1").addClass("big-title margin-50");
+});
+
+
+$(document).ready(function () {
+  $("h1").hasClass("margin-50");
+});
