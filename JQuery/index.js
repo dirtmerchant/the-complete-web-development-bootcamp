@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // $(document).ready(function () {
 //   $("h1").css("color", "red");
 // });
@@ -37,3 +38,8 @@
 $("button").click(function () {
   $("h1").slideUp().slideDown().animate({opacity: 0.5});
 });
+=======
+$(document).ready(function () {
+  $("h1").addClass("big-title margin-50");
+});
+>>>>>>> b46897cb6ff1c6b53472680c7e4837b2bea06168
