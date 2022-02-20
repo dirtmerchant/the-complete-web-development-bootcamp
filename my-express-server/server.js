@@ -1,18 +1,11 @@
-//jshint esversion:6
+const express = require('express')
+const app = express()
+const port = 3000
 
-const express = require("express");
-
-const app = express();
-
-app.get("/", function(req, res){
-    response.send("<h1>Hello World!</h1>");
-    console.log(request);
-
-
+app.get('/', (req, res) => {
+  res.send('Hello World!')
 })
 
-
-app.listen(3000);
-{
-    console.log("server has started on port 3000");
-}
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
