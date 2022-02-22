@@ -157,3 +157,14 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("h1").hasClass("margin-50");
 });
+
+
+## API
+
+curl -X GET https://api.openweathermap.org/data/2.5/weather?appid={}&q=south jordan -H "Accept: application/json" 
+
+curl -X GET https://api.openweathermap.org/data/2.5/weather\?appid\=\{\}\&q\=south\ jordan -H      "Accept: application/json" | json_pp
+
+
+
+
